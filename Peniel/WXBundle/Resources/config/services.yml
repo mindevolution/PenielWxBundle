@@ -1,0 +1,12 @@
+parameters:
+    wxAppId: wx6dcf1c05362cd361
+    wxSecret: ad2ec25e7a6465df90a034ce2e6d7ebb
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: true
+    peniel_wx.wechat:
+        class: Peniel\WXBundle\Service\Wechat
+        arguments: ["@service_container", "%wxAppId%", "%wxSecret%"]

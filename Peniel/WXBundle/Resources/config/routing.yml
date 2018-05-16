@@ -1,0 +1,11 @@
+peniel_wx_homepage:
+    path:     /
+    defaults: { _controller: PenielWXBundle:Default:index }
+
+peniel_wx_index:
+    path:     /index
+    defaults: { _controller: PenielWXBundle:WX:index }
+
+peniel_wx_check:
+    path:     /check
+    defaults: { _controller: PenielWXBundle:WX:check }
